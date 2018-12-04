@@ -1,15 +1,22 @@
 //
 //  main.c
-//  nesh
+//  NESH
 //
-//  Created by Nehir Poyraz on 4.12.2018.
-//  Copyright © 2018 Nehir Poyraz. All rights reserved.
+//  Created by Nehir Poyraz on 24.12.2017.
+//  Copyright © 2017 Nehir Poyraz. All rights reserved.
 //
 
 #include <stdio.h>
+#include <stdlib.h>
+#include "nesh.h"
+int main()
+{
+    // Load config
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
-    return 0;
+    nesh_loop();
+
+    // shutdown/cleanup
+
+    return EXIT_SUCCESS;
 }
+
