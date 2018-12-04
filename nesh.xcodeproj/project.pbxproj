@@ -30,6 +30,7 @@
 		8439654A21B7192D0056D972 /* nesh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nesh.c; sourceTree = "<group>"; };
 		8439654B21B7192D0056D972 /* nesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nesh.h; sourceTree = "<group>"; };
 		8439654C21B7192D0056D972 /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+		8439654F21B71B860056D972 /* prog */ = {isa = PBXFileReference; lastKnownFileType = folder; path = prog; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 		8439654221B718BF0056D972 /* nesh */ = {
 			isa = PBXGroup;
 			children = (
+				8439654F21B71B860056D972 /* prog */,
 				8439654C21B7192D0056D972 /* makefile */,
 				8439654A21B7192D0056D972 /* nesh.c */,
 				8439654B21B7192D0056D972 /* nesh.h */,
