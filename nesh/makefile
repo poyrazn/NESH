@@ -1,4 +1,4 @@
-IDIR=../include
+IDIR=include
 ODIR=obj
 CC=gcc
 CFLAGS=-Wall -I$(IDIR)
@@ -12,7 +12,7 @@ OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 $(ODIR)/%.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-Portal : $(OBJ)
+nesh : $(OBJ)
 	$(CC) -o $@ $^ $(CFLAGS)
 
 .PHONY: clean

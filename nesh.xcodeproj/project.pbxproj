@@ -10,6 +10,7 @@
 		8439654421B718BF0056D972 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 8439654321B718BF0056D972 /* main.c */; };
 		8439654D21B7192D0056D972 /* nesh.c in Sources */ = {isa = PBXBuildFile; fileRef = 8439654A21B7192D0056D972 /* nesh.c */; };
 		8439654E21B7192D0056D972 /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = 8439654C21B7192D0056D972 /* makefile */; };
+		8439655321B7251D0056D972 /* nesh.h in Frameworks */ = {isa = PBXBuildFile; fileRef = 8439655221B7251D0056D972 /* nesh.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,9 +29,10 @@
 		8439654021B718BF0056D972 /* nesh */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = nesh; sourceTree = BUILT_PRODUCTS_DIR; };
 		8439654321B718BF0056D972 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		8439654A21B7192D0056D972 /* nesh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nesh.c; sourceTree = "<group>"; };
-		8439654B21B7192D0056D972 /* nesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nesh.h; sourceTree = "<group>"; };
 		8439654C21B7192D0056D972 /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
 		8439654F21B71B860056D972 /* prog */ = {isa = PBXFileReference; lastKnownFileType = folder; path = prog; sourceTree = "<group>"; };
+		8439655021B724780056D972 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
+		8439655221B7251D0056D972 /* nesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = nesh.h; path = nesh/include/nesh.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8439655321B7251D0056D972 /* nesh.h in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +52,7 @@
 			children = (
 				8439654221B718BF0056D972 /* nesh */,
 				8439654121B718BF0056D972 /* Products */,
+				8439655121B7251D0056D972 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,13 +67,21 @@
 		8439654221B718BF0056D972 /* nesh */ = {
 			isa = PBXGroup;
 			children = (
+				8439655021B724780056D972 /* include */,
 				8439654F21B71B860056D972 /* prog */,
 				8439654C21B7192D0056D972 /* makefile */,
 				8439654A21B7192D0056D972 /* nesh.c */,
-				8439654B21B7192D0056D972 /* nesh.h */,
 				8439654321B718BF0056D972 /* main.c */,
 			);
 			path = nesh;
+			sourceTree = "<group>";
+		};
+		8439655121B7251D0056D972 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8439655221B7251D0056D972 /* nesh.h */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

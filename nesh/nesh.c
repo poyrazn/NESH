@@ -78,6 +78,7 @@ int nman_whereami(char **args) {
 	return 1;
 }
 
+
 int nesh_cd(char **args) {
 	if (args[1] == NULL) {
 		fprintf(stderr, "nesh: expected argument to \"cd\"\n");
@@ -347,6 +348,7 @@ void nesh_loop(void)
 	int status;
 	char host[64];
 	char path[256];
+    nesh_execute(nesh_split_line("help"));
 	do {
 		gethostname(host, 64);
 		getwd(path);
